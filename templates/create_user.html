@@ -9,14 +9,18 @@
 
 </head>
 <body>
-    <form action='/user/create' method="POST">
-    <label for="fname">First Name:</label>
-    <input type="text" name="fname">
-    <label for="lname">Last Name:</label>
-    <input type="text" name="lname">
-    <label for="email" >Email:</label>
-    <input type="text" name="email">
-    <input type="submit" value="Add User">
-    </form>
+    <div class = "container">
+        <h1>Add a New User</h1>
+        <a href="/users" class=""fs-4>Home</a>
+        <form action='/users/create' method="POST" class="fs-4"><br>
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname"><br>
+        <label for="email" >Email:</label><br>
+        <input type="text" name="email"><br><br>
+        <input type="submit" value="Create" class="btn btn-dark">
+        </form>
+    </div>
 </body>
 </html>
